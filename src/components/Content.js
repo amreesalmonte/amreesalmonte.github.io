@@ -7,7 +7,8 @@ class Content extends Component {
         return (
             <div>
                 <h1>{header}</h1>
-                <Links link={githubLink} title="github" />
+                {githubLink !== null && <Links link={githubLink} title="github" />}
+
             </div>
         );
     }

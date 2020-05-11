@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Links extends Component {
     render() {
         const { link, title } = this.props;
-        return (<a href={link} target="_blank" rel="noopener noreferrer" className="externalLink">{title}</a>);
+        return (<div className="linkOuter"><a href={link} target="_blank" rel="noopener noreferrer" className="pageLink">{title}</a></div>);
     }
 }
 

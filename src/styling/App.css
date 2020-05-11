@@ -1,0 +1,24 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.pageLink {
+    text-decoration: none;
+    color: white;
+}
+
+.linkOuter {
+    background-color: #5D7565;
+    width: 120px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+.linkOuter:hover {
+    background-color: #FF9900;
+    width: 120px;
+    border-radius: 50px;
+    text-align: center;
+}

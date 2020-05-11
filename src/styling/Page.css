@@ -1,6 +1,16 @@
 .pageBody {
     text-align: center;
     display: flex;
+}
+
+.pageContent {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.headings {
+    margin-bottom: 30px;
     margin-top: 30px;
 }
 
@@ -20,12 +30,6 @@
 .description {
     font-size: 20px;
     color: var(--main-color);
-}
-
-.pageContent {
-    text-align: left;
-    width: 70%;
-    margin: 0 auto;
 }
 
 .figmaWindow {

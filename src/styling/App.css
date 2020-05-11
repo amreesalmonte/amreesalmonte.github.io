@@ -43,6 +43,10 @@ body {
     margin: 0 auto;
 }
 
+.navBar:hover .content {
+    display: none;
+}
+
 .navLink {
     font-size: 20px;
     font-weight: bold;
@@ -58,6 +62,10 @@ body {
     color: var(--accent-color);
 }
 
+.navLink:hover .overlay {
+    display: block;
+}
+
 .dropdown {
     display: inline-block;
 }
@@ -70,24 +78,19 @@ body {
     padding-top: 0px;
     padding-left: 0px;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
 }
 
 .dropdownContent a {
     text-decoration: none;
     color: var(--main-color);
     font-size: 20px;
-    font-weight: bold;
 }
 
 .dropdownContent a:hover {
     color: var(--accent-color);
 }
 
-.dropdown:hover .dropdownContent {
+.dropdown:hover .dropdownContent{
     display: block;
-}
-
-.dropdown:hover body {
-    visibility: hidden;
 }

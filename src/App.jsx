@@ -6,10 +6,12 @@ import {
     Link
 } from "react-router-dom";
 import projectsData from "./data/projects";
+import experiencesData from "./data/experiences";
 import Page from "./components/Page";
 import About from "./components/About"
 
 const projects = projectsData;
+const experiences = experiencesData;
 
 class App extends Component {
     render() {
@@ -17,10 +19,23 @@ class App extends Component {
             <Router>
                 <div>
                     <div className="navBar">
-                        <Link exact to="/about">
-                            <p className="navLink">about</p>
+                        <Link to="/">
+                            <p className="navLink">home</p>
                         </Link>
-                        <p className="navLink">work</p>
+
+                        <div className="dropdown">
+                            <p className="navLink">experiences</p>
+                            <div className="dropdownContent">
+                                {
+                                    experiences.map((experience, index) => {
+                                        return <Link to={experience.route}>
+                                            <p className="dropdownLink" key={index}>{experience.content.header}</p>
+                                        </Link>
+                                    })
+                                }
+                            </div>
+                        </div>
+
                         <div className="dropdown">
                             <p className="navLink">projects</p>
                             <div className="dropdownContent">
@@ -35,10 +50,15 @@ class App extends Component {
                         </div>
                     </div>
                     <Switch>
-                        <Route path="/about"><About /></Route>
+                        <Route exact path="/"><About /></Route>
+                        {
+                            experiences.map((experience, index) => {
+                                return <Route exact path={experience.route}><Page key={index} page={experience.content} /></Route>
+                            })
+                        }
                         {
                             projects.map((project, index) => {
-                                return <Route path={project.route}><Page key={index} page={project.content} /></Route>
+                                return <Route exact path={project.route}><Page key={index} page={project.content} /></Route>
                             })
                         }
                     </Switch>

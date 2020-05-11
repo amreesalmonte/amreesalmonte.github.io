@@ -1,5 +1,15 @@
+:root {
+    --main-color: #1E3D40;
+    --sec-color: #5D7565;
+    --accent-color: #FF9900;
+}
+
+/*position, height, and weight makes div occupy full screen*/
 body {
     font-family: "Poppins", sans-serif;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .pageLink {
@@ -7,18 +17,77 @@ body {
     color: white;
 }
 
+.linksGroup {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .linkOuter {
-    background-color: #5D7565;
+    background-color: var(--sec-color);
     width: 120px;
     border-radius: 50px;
     text-align: center;
     display: inline-block;
-    margin: 5px;
+    margin-right: 20px;
 }
 
 .linkOuter:hover {
-    background-color: #FF9900;
+    background-color: var(--accent-color);
     width: 120px;
     border-radius: 50px;
     text-align: center;
+}
+
+.navBar {
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.navLink {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 30px;
+    padding-left: 0px;
+    text-decoration: none;
+    color: var(--main-color);
+    display: inline-block;
+}
+
+.navLink:hover {
+    color: var(--accent-color);
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdownContent {
+    text-align: left;
+    display: none;
+    position: absolute;
+    padding: 30px;
+    padding-top: 0px;
+    padding-left: 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropdownContent a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdownContent a:hover {
+    color: var(--accent-color);
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdown:hover body {
+    visibility: hidden;
 }

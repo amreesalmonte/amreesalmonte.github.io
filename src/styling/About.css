@@ -1,0 +1,29 @@
+.aboutBody {
+    text-align: center;
+    display: flex;
+    transform: translateY(90%);
+}
+
+.aboutContent {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 64px;
+    color: var(--main-color);
+    letter-spacing: 0.05cm;
+    line-height: 100%;
+    padding: 0px;
+    margin: 5px;
+}
+
+.secTitle {
+    font-size: 18px;
+    color: var(--sec-color);
+    line-height: 100%;
+    padding: 0px;
+    margin: 5px;
+    letter-spacing: 0.05cm;
+}

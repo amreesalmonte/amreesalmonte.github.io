@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import WelcomePage from "./components/WelcomePage"
 import "./styling/App.css"
+import App from "./App"
 
-ReactDOM.render(<WelcomePage />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

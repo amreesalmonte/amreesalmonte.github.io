@@ -1,9 +1,14 @@
 import React, { Component } from "react";
-import {
+/*import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    NavLink
+} from "react-router-dom";*/
+import {
+    HashRouter,
+    Route,
+    NavLink
 } from "react-router-dom";
 import projectsData from "./data/projects";
 import experiencesData from "./data/experiences";
@@ -16,21 +21,21 @@ const experiences = experiencesData;
 class App extends Component {
     render() {
         return (
-            <Router>
+            <HashRouter>
                 <div>
                     <div className="navBar">
-                        <Link to="/">
+                        <NavLink to="/">
                             <p className="navLink">home</p>
-                        </Link>
+                        </NavLink>
 
                         <div className="dropdown">
                             <p className="navLink">experiences</p>
                             <div className="dropdownContent">
                                 {
                                     experiences.map((experience, index) => {
-                                        return <Link to={experience.route}>
+                                        return <NavLink to={experience.route}>
                                             <p className="dropdownLink" key={index}>{experience.content.header}</p>
-                                        </Link>
+                                        </NavLink>
                                     })
                                 }
                             </div>
@@ -41,15 +46,15 @@ class App extends Component {
                             <div className="dropdownContent">
                                 {
                                     projects.map((project, index) => {
-                                        return <Link to={project.route}>
+                                        return <NavLink to={project.route}>
                                             <p className="dropdownLink" key={index}>{project.content.header}</p>
-                                        </Link>
+                                        </NavLink>
                                     })
                                 }
                             </div>
                         </div>
                     </div>
-                    <Switch>
+                    <div className="routerContent">
                         <Route exact path="/"><About /></Route>
                         {
                             experiences.map((experience, index) => {
@@ -61,9 +66,9 @@ class App extends Component {
                                 return <Route exact path={project.route}><Page key={index} page={project.content} /></Route>
                             })
                         }
-                    </Switch>
+                    </div>
                 </div >
-            </Router >
+            </HashRouter>
         );
     }
 }

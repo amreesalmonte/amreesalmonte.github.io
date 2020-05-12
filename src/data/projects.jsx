@@ -5,7 +5,7 @@ const projectsData = [
             header: "Personal Website",
             subHeader: "HTML, CSS, JavaScript, React",
             descriptions: ["A single page application created using React that showcases my projects and exhibits my skills in visual design", "Created reusable react components and dynamically created pages to reduce code redundancy"],
-            githubLink: "https://github.com/amreesalmonte/amreesalmonte.github.io",
+            githubLink: "https://github.com/amreesalmonte/personal-webapp",
             websiteLink: null,
             figma: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FeTOmtOE1nvpmaF3efyXxNh%2Fpersonal-website%3Fnode-id%3D0%253A1"
         }

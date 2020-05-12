@@ -51,6 +51,7 @@ body {
     font-weight: bold;
     margin: 0px;
     padding: 30px;
+    padding-bottom: 0px;
     padding-left: 0px;
     text-decoration: none;
     color: var(--main-color);
@@ -75,7 +76,10 @@ body {
 
 .dropdownContent {
     text-align: left;
+    padding-top: 5vh;
     position: absolute;
+    left: 5vw;
+    width: 50vw;
     display: none;
     background-color: white;
 }

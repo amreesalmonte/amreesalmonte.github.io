@@ -37,7 +37,6 @@ body {
 }
 
 .navBar {
-    width: 80vw;
     background-color: white;
     text-align: left;
     margin-left: 5vw;
@@ -94,6 +93,5 @@ body {
 .dropdown:hover .dropdownContent{
     display: block;
     background-color:white;
-    width: 80vw;
     left: 5vw;
 }

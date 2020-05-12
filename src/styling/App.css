@@ -38,6 +38,7 @@ body {
 
 .navBar {
     width: 80vw;
+    background-color: white;
     text-align: left;
     margin: 0 auto;
 }
@@ -75,8 +76,8 @@ body {
 
 .dropdownContent {
     text-align: left;
-    display: none;
     position: absolute;
+    display: none;
     background-color: white;
 }
 
@@ -92,4 +93,6 @@ body {
 
 .dropdown:hover .dropdownContent{
     display: block;
+    width: 80vw;
+    left: 8vw;
 }

@@ -1,12 +1,11 @@
 .pageBody {
-    text-align: center;
     display: flex;
 }
 
 .pageContent {
     text-align: left;
     width: 80vw;
-    margin: 0 auto;
+    margin-left: 5vw;
 }
 
 .headings {

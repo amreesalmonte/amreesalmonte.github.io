@@ -1,5 +1,4 @@
 .aboutBody {
-    text-align: center;
     display: flex;
     transform: translateY(20vh);
 }
@@ -7,7 +6,7 @@
 .aboutContent {
     text-align: left;
     width: 80vw;
-    margin: 0 auto;
+    margin-left: 5vw;
 }
 
 .title {

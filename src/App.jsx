@@ -24,7 +24,7 @@ class App extends Component {
                         </Link>
 
                         <div className="dropdown">
-                            <p className="navLink">experiences</p>
+                            <p className="navLink">experience</p>
                             <div className="dropdownContent">
                                 {
                                     experiences.map((experience, index) => {

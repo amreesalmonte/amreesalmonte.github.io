@@ -16,8 +16,8 @@ class Page extends Component {
                         {descriptions.map((description) => { return <li>{description}</li> })}
                     </div>
                     <div className="linksGroup">
-                        {githubLink !== null && <Links link={githubLink} title="github" />}
-                        {websiteLink !== null && <Links link={websiteLink} title="website" />}
+                        {githubLink !== null && <Links link={githubLink} title="code" />}
+                        {websiteLink !== null && <Links link={websiteLink} title="demo" />}
                     </div>
                     {figma !== null && <iframe title="project demo" className="figmaWindow" src={figma} allowFullScreen />}
                 </div>

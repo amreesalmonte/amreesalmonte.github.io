@@ -24,7 +24,7 @@ body {
 }
 
 .linkOuter {
-    background-color: var(--sec-color);
+    background-color:var(--accent-color);
     width: 120px;
     border-radius: 50px;
     text-align: center;
@@ -33,7 +33,7 @@ body {
 }
 
 .linkOuter:hover {
-    background-color: var(--accent-color);
+    background-color: var(--sec-color);
 }
 
 .navBar {

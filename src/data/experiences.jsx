@@ -26,7 +26,7 @@ const experiencesData = [
         content: {
             header: "App for HackED 2020",
             subHeader: "University of Alberta (Jan 2020 - April 2020)",
-            descriptions: ["Supervised a lab that supplements an introductory computing science class", "Aided students with programming assignments by teaching them good coding practices and methods to debug code", "Monitored online discussion forums outside of lab hours to further aid students outside of labs and class"],
+            descriptions: ["Collaborated with a partner in a 24 hour hackathon creating a cross- platform app called Collide using Flutter, Dart, and Firebase", "Collide is a social media app that allows users to login, create posts, and interact with other users", "Main contributions include front end development of user's profile page and user's dashboard"],
             githubLink: "https://github.com/eesayas/Collide",
             websiteLink: null,
             figma: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwSYhkR7rJUo6SSehGELzhS%2FCollide%3Fnode-id%3D0%253A1"

@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import "../styling/Links.css"
 
 class Links extends Component {
     render() {
         const { link, title } = this.props;
-        return (<div className="linkOuter"><a href={link} target="_blank" rel="noopener noreferrer" className="pageLink">{title}</a></div>);
+        return (
+            <div className="linkContainer">
+                <a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
+            </div>
+        );
     }
 }
 

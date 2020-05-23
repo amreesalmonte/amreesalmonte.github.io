@@ -1,72 +1,35 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
 } from "react-router-dom";
-import projectsData from "./data/projects";
-import experiencesData from "./data/experiences";
+import Intro from "./components/Intro";
 import Page from "./components/Page";
-import About from "./components/About"
-
-const projects = projectsData;
-const experiences = experiencesData;
+import Experience from "./data/Experience";
+import Projects from "./data/Projects";
+import "./App.css";
 
 class App extends Component {
-    render() {
-        return (
-            <Router>
-                <div>
-                    <div className="navBar">
-                        <Link to="/">
-                            <p className="navLink">home</p>
-                        </Link>
-
-                        <div className="dropdown">
-                            <p className="navLink">experience</p>
-
-                            <div className="dropdownContent">
-                                {
-                                    experiences.map((experience, index) => {
-                                        return <Link to={experience.route}>
-                                            <p className="dropdownLink" key={index}>{experience.content.header}</p>
-                                        </Link>
-                                    })
-                                }
-                            </div>
-                        </div>
-
-                        <div className="dropdown">
-                            <p className="navLink">projects</p>
-                            <div className="dropdownContent">
-                                {
-                                    projects.map((project, index) => {
-                                        return <Link to={project.route}>
-                                            <p className="dropdownLink" key={index}>{project.content.header}</p>
-                                        </Link>
-                                    })
-                                }
-                            </div>
-                        </div>
-                    </div>
-                    <Switch>
-                        <Route exact path="/"><About /></Route>
-                        {
-                            experiences.map((experience, index) => {
-                                return <Route exact path={experience.route}><Page key={index} page={experience.content} /></Route>
-                            })
-                        }
-                        {
-                            projects.map((project, index) => {
-                                return <Route exact path={project.route}><Page key={index} page={project.content} /></Route>
-                            })
-                        }
-                    </Switch>
-                </div >
-            </Router >
-        );
-    }
+  render() {
+    return (
+      <Router>
+        <div>
+          <div className="navBar">
+            <NavLink to="/">home</NavLink>
+            <NavLink to="/experience">experience</NavLink>
+            <NavLink to="/projects">projects</NavLink>
+          </div>
+        </div>
+        <Switch>
+          <Route exact path="/"><Intro /></Route>
+          <Route exact path="/experience"><Page page={Experience} /></Route>
+          <Route exact path="/projects"><Page page={Projects} /></Route>
+        </Switch>
+      </Router >
+    );
+  }
 }
 
 export default App;

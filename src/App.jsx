@@ -9,7 +9,7 @@ import Intro from "./components/Intro";
 import Page from "./components/Page";
 import Experience from "./data/Experience";
 import Projects from "./data/Projects";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 import "./App.css";
 
 class App extends Component {

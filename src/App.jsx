@@ -18,9 +18,9 @@ class App extends Component {
       <Router>
         <div>
           <div className="navBar">
-            <NavLink to="/">home</NavLink>
-            <NavLink to="/experience">experience</NavLink>
-            <NavLink to="/projects">projects</NavLink>
+            <NavLink exact activeStyle={{ color: "#7000FF" }} to="/">home</NavLink>
+            <NavLink exact activeStyle={{ color: "#7000FF" }} to="/experience">experience</NavLink>
+            <NavLink exact activeStyle={{ color: "#7000FF" }} to="/projects">projects</NavLink>
           </div>
         </div>
         <Switch>

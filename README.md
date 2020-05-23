@@ -1,3 +1,7 @@
-#Personal Website
+# Personal Website
 
-personal website created using react
+code for personal website created using React.
+
+Check out the website here:
+
+    https://www.amreesalmonte.github.io

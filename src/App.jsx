@@ -9,6 +9,7 @@ import Intro from "./components/Intro";
 import Page from "./components/Page";
 import Experience from "./data/Experience";
 import Projects from "./data/Projects";
+import Footer from "./components/Footer"
 import "./App.css";
 
 class App extends Component {
@@ -23,10 +24,13 @@ class App extends Component {
           </div>
         </div>
         <Switch>
-          <Route exact path="/"><Intro /></Route>
-          <Route exact path="/experience"><Page page={Experience} /></Route>
-          <Route exact path="/projects"><Page page={Projects} /></Route>
+          <div className="content">
+            <Route exact path="/"><Intro /></Route>
+            <Route exact path="/experience"><Page page={Experience} /></Route>
+            <Route exact path="/projects"><Page page={Projects} /></Route>
+          </div>
         </Switch>
+        <Footer />
       </Router >
     );
   }

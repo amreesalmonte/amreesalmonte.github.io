@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   NavLink
@@ -15,7 +15,7 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
         <div>
           <div className="navBar">
             <NavLink exact activeStyle={{ color: "#7000FF" }} to="/">home</NavLink>
@@ -31,7 +31,7 @@ class App extends Component {
           </div>
         </Switch>
         <Footer />
-      </Router >
+      </HashRouter >
     );
   }
 }

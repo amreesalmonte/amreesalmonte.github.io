@@ -1,5 +1,12 @@
 const Projects = [
     {
+        header: "Dear Diary",
+        subHeader: "React, Node, Firebase",
+        description: "Collaborated in a team of 2 to create a voice responsive virtual diary using the Speech Recognition API",
+        githubLink: "https://github.com/eesayas/dear-diary",
+        websiteLink: null
+    },
+    {
         header: "Name My Dog",
         subHeader: "HTML, CSS, JavaScript",
         description: "Generates a name for dog based on user inputs",
@@ -16,7 +23,7 @@ const Projects = [
     {
         header: "Password Manager",
         subHeader: "Python, SQL",
-        description: "Password protected program where a user can add, delete, and update account information which include emails and passwords categorized by website",
+        description: "Created a password manager using Python where a user can add, delete, and update passwords associated with different sites",
         githubLink: "https://github.com/amreesalmonte/password-manager",
         websiteLink: null
     }

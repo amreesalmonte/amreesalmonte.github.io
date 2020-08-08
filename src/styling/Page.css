@@ -1,7 +1,0 @@
-.pageCards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-top: 50px;
-}
